@@ -107,11 +107,11 @@ class _$MovieDetailCopyWithImpl<$Res, $Val extends MovieDetail>
 }
 
 /// @nodoc
-abstract class _$$_MovieDetailCopyWith<$Res>
+abstract class _$$MovieDetailImplCopyWith<$Res>
     implements $MovieDetailCopyWith<$Res> {
-  factory _$$_MovieDetailCopyWith(
-          _$_MovieDetail value, $Res Function(_$_MovieDetail) then) =
-      __$$_MovieDetailCopyWithImpl<$Res>;
+  factory _$$MovieDetailImplCopyWith(
+          _$MovieDetailImpl value, $Res Function(_$MovieDetailImpl) then) =
+      __$$MovieDetailImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -126,11 +126,11 @@ abstract class _$$_MovieDetailCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_MovieDetailCopyWithImpl<$Res>
-    extends _$MovieDetailCopyWithImpl<$Res, _$_MovieDetail>
-    implements _$$_MovieDetailCopyWith<$Res> {
-  __$$_MovieDetailCopyWithImpl(
-      _$_MovieDetail _value, $Res Function(_$_MovieDetail) _then)
+class __$$MovieDetailImplCopyWithImpl<$Res>
+    extends _$MovieDetailCopyWithImpl<$Res, _$MovieDetailImpl>
+    implements _$$MovieDetailImplCopyWith<$Res> {
+  __$$MovieDetailImplCopyWithImpl(
+      _$MovieDetailImpl _value, $Res Function(_$MovieDetailImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -145,7 +145,7 @@ class __$$_MovieDetailCopyWithImpl<$Res>
     Object? voteAverage = null,
     Object? genres = null,
   }) {
-    return _then(_$_MovieDetail(
+    return _then(_$MovieDetailImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -184,8 +184,8 @@ class __$$_MovieDetailCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MovieDetail implements _MovieDetail {
-  const _$_MovieDetail(
+class _$MovieDetailImpl implements _MovieDetail {
+  const _$MovieDetailImpl(
       {required this.id,
       required this.title,
       this.posterPath,
@@ -227,7 +227,7 @@ class _$_MovieDetail implements _MovieDetail {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_MovieDetail &&
+            other is _$MovieDetailImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.posterPath, posterPath) ||
@@ -257,8 +257,8 @@ class _$_MovieDetail implements _MovieDetail {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_MovieDetailCopyWith<_$_MovieDetail> get copyWith =>
-      __$$_MovieDetailCopyWithImpl<_$_MovieDetail>(this, _$identity);
+  _$$MovieDetailImplCopyWith<_$MovieDetailImpl> get copyWith =>
+      __$$MovieDetailImplCopyWithImpl<_$MovieDetailImpl>(this, _$identity);
 }
 
 abstract class _MovieDetail implements MovieDetail {
@@ -270,7 +270,7 @@ abstract class _MovieDetail implements MovieDetail {
       final String? backdropPath,
       required final int runtime,
       required final double voteAverage,
-      required final List<String> genres}) = _$_MovieDetail;
+      required final List<String> genres}) = _$MovieDetailImpl;
 
   @override
   int get id;
@@ -290,6 +290,6 @@ abstract class _MovieDetail implements MovieDetail {
   List<String> get genres;
   @override
   @JsonKey(ignore: true)
-  _$$_MovieDetailCopyWith<_$_MovieDetail> get copyWith =>
+  _$$MovieDetailImplCopyWith<_$MovieDetailImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

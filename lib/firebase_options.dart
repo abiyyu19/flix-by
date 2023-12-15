@@ -50,20 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAAKI3eCgWwh3qtpNElHz3Mqs-SmX3_IAY',
-    appId: '1:1036098836244:android:1ce3e9f066f17771905401',
-    messagingSenderId: '1036098836244',
-    projectId: 'flix-by-course',
-    storageBucket: 'flix-by-course.appspot.com',
+    apiKey: 'AIzaSyAM5KCXs1Hf3fibhNcjdKiiOqLBL3mGgiM',
+    appId: '1:82624511772:android:9f805c56467543d65884d9',
+    messagingSenderId: '82624511772',
+    projectId: 'flix-by',
+    storageBucket: 'flix-by.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAmI8dFHF9FTKSEc9QGu_tHQW1SVz1BFSQ',
-    appId: '1:1036098836244:ios:33f73eaef39ca247905401',
-    messagingSenderId: '1036098836244',
-    projectId: 'flix-by-course',
-    storageBucket: 'flix-by-course.appspot.com',
-    iosClientId: '1036098836244-rko0p176sf9hkh4epctho801ms60crvg.apps.googleusercontent.com',
+    apiKey: 'AIzaSyD8NcypdQ3efFiH8r4cTp6cnNiRWY4Tz6I',
+    appId: '1:82624511772:ios:1a7378772dfc9e415884d9',
+    messagingSenderId: '82624511772',
+    projectId: 'flix-by',
+    storageBucket: 'flix-by.appspot.com',
     iosBundleId: 'com.example.flixBy',
   );
 }

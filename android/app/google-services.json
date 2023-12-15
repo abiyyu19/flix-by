@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "1036098836244",
-    "project_id": "flix-by-course",
-    "storage_bucket": "flix-by-course.appspot.com"
+    "project_number": "82624511772",
+    "project_id": "flix-by",
+    "storage_bucket": "flix-by.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1036098836244:android:1ce3e9f066f17771905401",
+        "mobilesdk_app_id": "1:82624511772:android:9f805c56467543d65884d9",
         "android_client_info": {
           "package_name": "com.biyu.flix_by"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "1036098836244-vofnm4fem1fum7qnb048e6dvuagalnj6.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAAKI3eCgWwh3qtpNElHz3Mqs-SmX3_IAY"
+          "current_key": "AIzaSyAM5KCXs1Hf3fibhNcjdKiiOqLBL3mGgiM"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1036098836244-vofnm4fem1fum7qnb048e6dvuagalnj6.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
