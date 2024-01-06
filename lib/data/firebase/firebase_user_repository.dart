@@ -17,9 +17,25 @@ class FirebaseUserRepository implements UserRepository {
       required String email,
       required String name,
       String? photoUrl,
-      int balance = 0}) {
-    // TODO: implement createUser
-    throw UnimplementedError();
+      int balance = 0}) async {
+    CollectionReference<Map<String, dynamic>> users =
+        _firebaseFirestore.collection('users');
+
+    await users.doc(uid).set({
+      'uid': uid,
+      'email': email,
+      'name': name,
+      'photoUrl': photoUrl,
+      'balance': balance
+    });
+
+    DocumentSnapshot<Map<String, dynamic>> result = await users.doc(uid).get();
+
+    if (result.exists) {
+      return Result.success(User.fromJson(result.data()!));
+    } else {
+      return const Result.failed('Failed to create user data');
+    }
   }
 
   @override
@@ -51,8 +67,9 @@ class FirebaseUserRepository implements UserRepository {
   }
 
   @override
-  Future<Result<User>> updateUser({required User user}) {
-    // TODO: implement updateUser
+  Future<Result<User>> updateUser({required User user}) async {
+    // DocumentReference<Map<String, dynamic>> documentReference = _firebaseFirestore.doc(documentPath)
+    // TODO: implement updateProfilePicture
     throw UnimplementedError();
   }
 
